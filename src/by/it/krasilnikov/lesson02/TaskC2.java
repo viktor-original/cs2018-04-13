@@ -21,9 +21,8 @@ class TaskC2 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int sum = b + c;
-        int sumb = 0bsum;
         System.out.println("DEC:" + b + c + "=" + sum);
-        System.out.println("BIN:" + 0bb + 0bc + "=" + sumb );
+        System.out.println("BIN:" + "=" + sum);
     }
 
 }
