@@ -21,8 +21,11 @@ class TaskC2 {
         int b = sc.nextInt();
         int c = sc.nextInt();
         int sum = b + c;
-        System.out.println("DEC:" + b + c + "=" + sum);
-        System.out.println("BIN:" + "=" + sum);
+        System.out.println("DEC:" + b + "+"+ c + "=" + sum);
+        System.out.println("BIN:" + Integer.toBinaryString(b) + "+" + Integer.toBinaryString(c) + "=" + Integer.toBinaryString(sum));
+        System.out.println("HEX:" + Integer.toHexString(b) + "+" + Integer.toHexString(c) + "=" + Integer.toHexString(sum));
+        System.out.println("OCT:" + Integer.toOctalString(b) + "+" + Integer.toOctalString(c) + "=" + Integer.toOctalString(sum));
+
     }
 
 }
