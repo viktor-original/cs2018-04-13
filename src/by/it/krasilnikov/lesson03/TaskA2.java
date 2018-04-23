@@ -23,8 +23,10 @@ Lesson 03. Task A2. Стихотворение
 class TaskA2 {
     public static void main(String[] args) {
         String a="У лукоморья дуб зеленый";
-        String b=" ";
-        String c="";
-
+        String b="Златая цепь на дубе том";
+        String c="И днем и ночью кот ученый";
+        String d="Все ходит по цепи кругом";
+        String e="Мое любимое стихотворение:";
+        System.out.println();
     }
 }
