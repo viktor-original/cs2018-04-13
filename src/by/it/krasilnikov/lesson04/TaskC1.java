@@ -42,21 +42,37 @@ public class TaskC1 {
     public static void main(String[] args) {
         System.out.println("Какую вы хотите зарплату в $$$?");
         Scanner scanner = new Scanner(System.in);
-        int zp = scanner.nextInt();
-        double fzp = 0.0;
-        fzp = fzp + zp;
-        if ((300 > zp) || (zp > 3000))
+        int oklad = scanner.nextInt();
+        if ((300 > oklad) || (oklad > 3000))
             System.out.println("Мы вам перезвоним!");
-        else for (int month = 0; month < 14; month++) {
-            if (month == 0 || month == 13 || month == 14)
-                System.out.println("За месяц " + month + " начислено $" + 0.0);
-            else
-                System.out.println("За месяц " + month + " начислено $" + (fzp + zp / 2));
-            month++;
+        else for (int month = 0; month <= 14; month++) {
+            double fzp = 0.0;
+            if (month > 0 && month < 13 )
+                fzp=oklad*1.5;
+            if (month > 5 && month < 9)
+                fzp=oklad;
+            switch (month){
+                case 1:System.out.println("За январь начислено $" + fzp); break;
+                case 2:System.out.println("За февраль начислено $" + fzp); break;
+                case 3:System.out.println("За март начислено $" + fzp); break;
+                case 4:System.out.println("За апрель начислено $" + fzp); break;
+                case 5:System.out.println("За май начислено $" + fzp); break;
+                case 6:System.out.println("За июнь начислено $" + fzp); break;
+                case 7:System.out.println("За июль начислено $" + fzp); break;
+                case 8:System.out.println("За август начислено $" + fzp); break;
+                case 9:System.out.println("За сентябрь начислено $" + fzp); break;
+                case 10:System.out.println("За октябрь начислено $" + fzp); break;
+                case 11:System.out.println("За ноябрь начислено $" + fzp); break;
+                case 12:System.out.println("За декабрь начислено $" + fzp); break;
+                case 13:System.out.println("За месяц 13 начислено $" + fzp); break;
+                case 14:System.out.println("За месяц 14 начислено $" + fzp); break;
+                default:System.out.println("За месяц " + month + " начислено $" + fzp); break;
+            }
+            if (fzp == 666)
+            break;
 
-            if (month == 7 || month == 8 || month == 9)
-                System.out.println("За месяц " + month + " начислено $" + fzp);
-            else System.out.println("За месяц " + month + " начислено $" + (fzp + zp / 2));
+
+
 
 
         }
